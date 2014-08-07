@@ -1,9 +1,9 @@
-package com.ci.mtup.dbcon;
+package com.thincaps.mtup.dbcon;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import com.ci.mtup.util.UserDbConstants;
+import com.thinkcaps.mtup.util.UserDbConstants;
 
 public class DBConnection {
 

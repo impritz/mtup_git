@@ -1,4 +1,4 @@
-package com.ci.mtup.util;
+package com.thinkcaps.mtup.util;
 
 public class UserDbConstants {
 

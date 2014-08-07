@@ -3,11 +3,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   	  <parent>
-		<groupId>com.ci.mtup</groupId>
+		<groupId>com.thinkcaps.mtup</groupId>
 		<artifactId>MTUPProject</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	  </parent>
-  <groupId>com.ci.mtup</groupId>
+  <groupId>com.thinkcaps.mtup</groupId>
   <artifactId>webContent</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -26,7 +26,7 @@
 		<version>1.3.10</version>
     </dependency>
     <dependency>
-		<groupId>com.ci.mtup</groupId>
+		<groupId>com.thinkcaps.mtup</groupId>
 		<artifactId>bundles</artifactId>
 		<version>1.0-SNAPSHOT</version>
     </dependency>
@@ -42,6 +42,28 @@
 					<server>TomcatServer</server>
 					<path>/MTUP</path>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>8.0.3.v20111011</version>
 			</plugin>
 		</plugins>
     <finalName>webContent</finalName>
